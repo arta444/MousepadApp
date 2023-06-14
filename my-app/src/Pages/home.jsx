@@ -1,11 +1,16 @@
-import Navbar from "../Components/Navbar";
 import "./Home.css";
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <p>Home Page</p>
-    </>
+    <div className="shop">
+      <div className="homeTitle">
+        <p>Shop</p>
+      </div>
+
+    <div className="products">
+      
+    </div>
+
+    </div>
   );
 }
