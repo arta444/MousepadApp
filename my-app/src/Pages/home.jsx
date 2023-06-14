@@ -2,8 +2,15 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <>
-      <p>Home Page</p>
-    </>
+    <div className="shop">
+      <div className="homeTitle">
+        <p>Shop</p>
+      </div>
+
+    <div className="products">
+      
+    </div>
+
+    </div>
   );
 }
