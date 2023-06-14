@@ -1,10 +1,12 @@
 .navbar{
-    background-color: grey;
+    background-color: black;
     justify-content: space-between;
+    
 }
 .navLink{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 2rem;
     font-weight: bold;
+    display: flex ;
 }
