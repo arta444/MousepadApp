@@ -8,8 +8,8 @@ export default function Cart() {
    <div>
       <h1>Cart Page</h1>
       <div className="products">
-        {productsList.map((product)=>
-        (<Product data={product}/>
+        {productsList.map((product, index)=>
+        (<Product key={index} data={product}/>
         ))} 
       </div>
     </div>
