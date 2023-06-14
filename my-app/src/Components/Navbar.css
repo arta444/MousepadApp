@@ -1,13 +1,14 @@
 .navbar{
-    background-color: grey;
+    background-color: black;
     justify-content: space-between;
+    
 }
 .navLink{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 2rem;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    display: flex ;
 }
+>>>>>>> dd44c80ff883a830ebb15bb25f652448c90fc662
