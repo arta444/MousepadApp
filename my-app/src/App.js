@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import {Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home.jsx";
 import Cart from "./Pages/Cart";
 import Navbar from "./Components/Navbar";
@@ -7,12 +7,11 @@ import Navbar from "./Components/Navbar";
 function App() {
   return (
     <>
-     <Navbar/>
+      <Navbar/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/home" element={<Home/>}/>
-        <Route path="/cart" element={<Cart/>}/>
-        
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   );
