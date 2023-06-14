@@ -2,7 +2,7 @@
 //we will later build the backend and then delite this file
 
 import KOI from "./assets/KOI.png"
-
+import house from "./assets/house.jpg"
 
  const productsList = [
     {
@@ -15,7 +15,7 @@ import KOI from "./assets/KOI.png"
         id: 2,
         productName: 'Koi mousepad',
         price: 30.0,
-        productImage: KOI,
+        productImage: house,
     },
     {
         id: 3,

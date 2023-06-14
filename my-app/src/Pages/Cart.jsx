@@ -2,6 +2,7 @@ import React from 'react';
 import productsList from '../productsList';
 import { Product } from '../Components/Product';
 
+
 export default function Cart() {
   return (
    <div>
