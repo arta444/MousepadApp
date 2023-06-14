@@ -1,4 +1,13 @@
 .container{
   display: flex;
-  
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+button{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 20%;
+  border: 2px solid black;
 }

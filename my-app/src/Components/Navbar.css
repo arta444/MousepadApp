@@ -1,0 +1,8 @@
+.navbar{
+    background-color: lightgrey;
+    justify-content: space-between;
+}
+.navLink{
+    text-decoration: none;
+
+}
