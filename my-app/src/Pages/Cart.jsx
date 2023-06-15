@@ -1,6 +1,6 @@
 import React from 'react';
 import productsList from '../productsList';
-import { Productt } from '../Components/Product';
+
 
 export default function Cart() {
   return (
