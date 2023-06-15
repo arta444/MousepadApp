@@ -1,16 +1,17 @@
 import React from 'react';
+import productsList from '../productsList';
+import { Productt } from '../Components/Product';
 
 export default function Cart() {
   return (
-    <div className="shop">
-      <div className="homeTitle">
-        <p>Shop</p>
+   <div>
+      <h1>Cart Page</h1>
+      <div className="products">
+        {productsList.map((product)=>
+        (<Productt data={product}/>
+        ))} 
       </div>
-
-    <div className="products">
-    
     </div>
+  )
+};
 
-    </div>
-  );
-}
