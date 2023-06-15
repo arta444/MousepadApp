@@ -10,3 +10,21 @@
     font-weight: bold;
     display: flex ;
 }
+.amount{
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:white ;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+.cartsvg{
+    display: flex;
+}
