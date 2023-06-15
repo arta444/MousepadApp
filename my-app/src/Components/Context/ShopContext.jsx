@@ -3,6 +3,7 @@ import productsList from '../../productsList';
 
 export const ShopContext = createContext(null);
 
+//sets the amount of all items to zero 
 const getDefaultCart = () => {
   let cart = {};
   for (let i = 1; i < productsList.length + 1; i++) {
@@ -12,6 +13,7 @@ const getDefaultCart = () => {
 };
 
 export const ShopContextProvider = (props) => {
+  //creates cartItems state, initializes it with all zeros 
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   const addToCart = (itemId) => {

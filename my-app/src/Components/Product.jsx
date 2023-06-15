@@ -5,11 +5,12 @@ import { ShopContext } from './Context/ShopContext'
 
 export const Product = (props) => {
     const {id, productName, price, productImage} = props.data
+    //Extracts values of addToCart and cartItem from the
+    //ShopContext value (object) 
     const {addToCart, cartItems} = useContext(ShopContext)
 
     const cartItemAmount = cartItems[id]
     
-
     return <div className='product'>
         <img className="image" src ={productImage}/> 
         <div className='info'>
