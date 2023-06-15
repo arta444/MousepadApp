@@ -1,10 +1,10 @@
 import React from 'react'
-
+import "./Product.css"
 
 export const Product = (props) => {
     const {id, productName, price, productImage} = props.data
     return <div className='product'>
-        <img src = {productImage}/> 
+        <img className="image" src ={productImage}/> 
         <div className='info'>
             <p>
                 <b> {productName}</b>
