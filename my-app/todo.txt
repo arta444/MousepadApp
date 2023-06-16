@@ -1,0 +1,3 @@
+-Make a backend
+    -login, auth 
+    -connect stripe 

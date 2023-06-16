@@ -1,8 +1,9 @@
-import React, { createContext, useEffect, useState } from 'react'
+import React, { createContext, useContext, useEffect, useState } from 'react'
 import productsList from '../../productsList';
 
 export const ShopContext = createContext(null);
 
+//sets the amount of all items to zero 
 const getDefaultCart = () => {
   let cart = {};
   for (let i = 1; i < productsList.length + 1; i++) {
@@ -11,7 +12,13 @@ const getDefaultCart = () => {
   return cart;
 };
 
+//customn react hook to get ShopContext outside of this file 
+export function useShopContext (){
+  return useContext(ShopContext)
+}
+
 export const ShopContextProvider = (props) => {
+  //creates cartItems state, initializes it with all zeros 
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   const addToCart = (itemId) => {
@@ -25,7 +32,6 @@ export const ShopContextProvider = (props) => {
   
   const contextValue = {cartItems, addToCart, removeFromCart}
   
-   console.log(cartItems)
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}
