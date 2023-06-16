@@ -1,22 +1,17 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import "./Navbar.css";
 import { Link } from 'react-router-dom';
 import {ShoppingCart} from "phosphor-react"
-import {ShopContext} from "./Context/ShopContext";
-
-
-
+import {useShopContext} from "./Context/ShopContext"
 
 
 export default function Navbar () {
-  const {cartItems} = useContext(ShopContext)
+  const {cartItems} = useShopContext();
   let totalItems =0;
 
   for (let key in cartItems){
     totalItems+=cartItems[key];
   }
-
-  console.log(cartItems)
 
   return (
     <div className="container navbar">

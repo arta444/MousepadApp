@@ -6,7 +6,7 @@ export default function Cart() {
   return (
     <div className="shop">
       <div className="homeTitle">
-        <p>Shop</p>
+        <p>Cart Page</p>
       </div>
 
     <div className="products">

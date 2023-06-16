@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from 'react'
+import React, { createContext, useContext, useEffect, useState } from 'react'
 import productsList from '../../productsList';
 
 export const ShopContext = createContext(null);
@@ -11,6 +11,11 @@ const getDefaultCart = () => {
   }
   return cart;
 };
+
+//customn react hook to get ShopContext outside of this file 
+export function useShopContext (){
+  return useContext(ShopContext)
+}
 
 export const ShopContextProvider = (props) => {
   //creates cartItems state, initializes it with all zeros 
