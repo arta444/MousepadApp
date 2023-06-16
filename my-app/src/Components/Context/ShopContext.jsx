@@ -17,6 +17,7 @@ export function useShopContext() {
   return useContext(ShopContext);
 }
 
+
 export const ShopContextProvider = (props) => {
   //creates cartItems state, initializes it with all zeros
   const [cartItems, setCartItems] = useState(getDefaultCart());
