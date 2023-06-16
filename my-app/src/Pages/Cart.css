@@ -1,0 +1,16 @@
+.cartItems{
+    padding: 2rem;
+    padding-top: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.cart{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin: 1rem;
+}

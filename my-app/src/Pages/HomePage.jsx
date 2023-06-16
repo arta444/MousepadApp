@@ -11,11 +11,10 @@ return (
     <div className="shopTitle">
      <h1>Cart Page</h1>
      </div>
-     
-     <div className="products">
-       {productsList.map((product, index)=>
-       (<Product key={index} data={product}/>
-       ))} 
+     <div className="productsContainer">
+        {productsList.map((product, index)=>
+        (<Product key={index} data={product}/>
+        ))} 
      </div>
    </div>
  )
