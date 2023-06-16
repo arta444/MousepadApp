@@ -1,0 +1,21 @@
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+.cartImageContainer{
+    width: 50%;
+}
+.cartDescriptionContainer {
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.cartItemContainer{
+ background-color: lightgrey;
+ border-radius: 15px;
+ margin: 10px;
+}

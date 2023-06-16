@@ -1,7 +1,9 @@
 .navbar{
     background-color: black;
     justify-content: space-between;
-    
+    height: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .navLink{
     text-decoration: none;
